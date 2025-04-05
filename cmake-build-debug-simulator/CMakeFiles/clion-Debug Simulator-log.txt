@@ -1,0 +1,5 @@
+/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/nyan/projects/pet/deflect -B /home/nyan/projects/pet/deflect/cmake-build-debug-simulator
+-- SDK Path: /home/nyan/PlaydateSDK
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/nyan/projects/pet/deflect/cmake-build-debug-simulator

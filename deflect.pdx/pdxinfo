@@ -1,0 +1,8 @@
+name=deflect
+author=Punch & Co
+description=action slicer
+bundleID=com.panic.whirlwind
+imagePath=images/
+version=0.4
+pdxversion=20601
+buildtime=797203251

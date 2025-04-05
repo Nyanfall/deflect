@@ -1,0 +1,1 @@
+/usr/bin/cc -fPIC -g -shared -Wl,-soname,libdeflect.so -o libdeflect.so CMakeFiles/deflect.dir/main.c.o

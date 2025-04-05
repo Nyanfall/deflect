@@ -1,0 +1,213 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:29 (project)"
+    message: |
+      The system is: Linux - 6.13.8-arch1-1 - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:29 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /bin/arm-none-eabi-gcc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/stdlib/exit.c:65:(.text.exit+0x28): undefined reference to `_exit'
+      /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/closer.c:47:(.text._close_r+0x18): undefined reference to `_close'
+      /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x24): undefined reference to `_lseek'
+      /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/readr.c:49:(.text._read_r+0x24): undefined reference to `_read'
+      /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/writer.c:49:(.text._write_r+0x24): undefined reference to `_write'
+      /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+      /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+      collect2: error: ld returned 1 exit status
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:29 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /bin/arm-none-eabi-gcc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is GNU, found in:
+        /home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/3.30.5/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:1192 (message)"
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineASMCompiler.cmake:135 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
+      - "CMakeLists.txt:29 (project)"
+    message: |
+      Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+      arm-none-eabi-gcc (Arch Repository) 14.2.0
+      Copyright (C) 2024 Free Software Foundation, Inc.
+      This is free software; see the source for copying conditions.  There is NO
+      warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:29 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-Dfgqyo"
+      binary: "/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-Dfgqyo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-Dfgqyo'
+        
+        Run Build Command(s): /home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_b1213/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_b1213.dir/build.make CMakeFiles/cmTC_b1213.dir/build
+        make[1]: Entering directory '/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-Dfgqyo'
+        Building C object CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj
+        /bin/arm-none-eabi-gcc   -std=gnu11 -fdiagnostics-color=always   -v -o CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj -c /home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/bin/arm-none-eabi-gcc
+        Target: arm-none-eabi
+        Configured with: /build/arm-none-eabi-gcc/src/gcc-14.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/arm-none-eabi-gcc/-/issues --with-multilib-list=rmprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Arch Repository) 
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b1213.dir/'
+         /usr/lib/gcc/arm-none-eabi/14.2.0/cc1 -quiet -v -D__USES_INITFINI__ /home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_b1213.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mcpu=arm7tdmi -mfloat-abi=soft -marm -mlibarch=armv4t -march=armv4t -std=gnu11 -version -fdiagnostics-color=always -o /tmp/ccdjK8le.s
+        GNU C11 (Arch Repository) version 14.2.0 (arm-none-eabi)
+        	compiled by GNU C version 14.2.1 20240910, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.27-GMP
+        
+        warning: MPFR header version 4.2.1 differs from library version 4.2.2.
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring nonexistent directory "/usr/arm-none-eabi/usr/local/include"
+        ignoring duplicate directory "/usr/arm-none-eabi/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/arm-none-eabi/14.2.0/include
+         /usr/lib/gcc/arm-none-eabi/14.2.0/include-fixed
+         /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/include
+        End of search list.
+        Compiler executable checksum: 27ee4863632474af78fa6d6c36d3934a
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b1213.dir/'
+         /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/as -v -march=armv4t -mfloat-abi=soft -meabi=5 -o CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj /tmp/ccdjK8le.s
+        GNU assembler version 2.43 (arm-none-eabi) using BFD version (GNU Binutils) 2.43
+        COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/14.2.0/:/usr/lib/gcc/arm-none-eabi/14.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/14.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/14.2.0/:/usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-fdiagnostics-color=always' '-std=gnu11' '-v' '-o' 'CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj' '-c' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_b1213
+        /home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b1213.dir/link.txt --verbose=1
+        /bin/arm-none-eabi-gcc  -v -Wl,-v CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj -o cmTC_b1213
+        Using built-in specs.
+        COLLECT_GCC=/bin/arm-none-eabi-gcc
+        COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-none-eabi/14.2.0/lto-wrapper
+        Target: arm-none-eabi
+        Configured with: /build/arm-none-eabi-gcc/src/gcc-14.2.0/configure --target=arm-none-eabi --prefix=/usr --with-sysroot=/usr/arm-none-eabi --with-native-system-header-dir=/include --libexecdir=/usr/lib --enable-languages=c,c++ --enable-plugins --disable-decimal-float --disable-libffi --disable-libgomp --disable-libmudflap --disable-libquadmath --disable-libssp --disable-libstdcxx-pch --disable-nls --disable-shared --disable-threads --disable-tls --with-gnu-as --with-gnu-ld --with-system-zlib --with-newlib --with-headers=/usr/arm-none-eabi/include --with-python-dir=share/gcc-arm-none-eabi --with-gmp --with-mpfr --with-mpc --with-isl --with-libelf --enable-gnu-indirect-function --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-pkgversion='Arch Repository' --with-bugurl=https://gitlab.archlinux.org/archlinux/packaging/packages/arm-none-eabi-gcc/-/issues --with-multilib-list=rmprofile
+        Thread model: single
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 14.2.0 (Arch Repository) 
+        COMPILER_PATH=/usr/lib/gcc/arm-none-eabi/14.2.0/:/usr/lib/gcc/arm-none-eabi/14.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/14.2.0/:/usr/lib/gcc/arm-none-eabi/:/usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/
+        LIBRARY_PATH=/usr/lib/gcc/arm-none-eabi/14.2.0/:/usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/:/usr/arm-none-eabi/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_b1213' '-mcpu=arm7tdmi' '-mfloat-abi=soft' '-marm' '-mlibarch=armv4t' '-march=armv4t' '-dumpdir' 'cmTC_b1213.'
+         /usr/lib/gcc/arm-none-eabi/14.2.0/collect2 -plugin /usr/lib/gcc/arm-none-eabi/14.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-none-eabi/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnyjITc.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=/usr/arm-none-eabi -X -o cmTC_b1213 /usr/lib/gcc/arm-none-eabi/14.2.0/crti.o /usr/lib/gcc/arm-none-eabi/14.2.0/crtbegin.o /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/crt0.o -L/usr/lib/gcc/arm-none-eabi/14.2.0 -L/usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib -L/usr/arm-none-eabi/lib -v CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group /usr/lib/gcc/arm-none-eabi/14.2.0/crtend.o /usr/lib/gcc/arm-none-eabi/14.2.0/crtn.o
+        collect2 version 14.2.0
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld -plugin /usr/lib/gcc/arm-none-eabi/14.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/arm-none-eabi/14.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccnyjITc.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=/usr/arm-none-eabi -X -o cmTC_b1213 /usr/lib/gcc/arm-none-eabi/14.2.0/crti.o /usr/lib/gcc/arm-none-eabi/14.2.0/crtbegin.o /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/crt0.o -L/usr/lib/gcc/arm-none-eabi/14.2.0 -L/usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib -L/usr/arm-none-eabi/lib -v CMakeFiles/cmTC_b1213.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lc --end-group /usr/lib/gcc/arm-none-eabi/14.2.0/crtend.o /usr/lib/gcc/arm-none-eabi/14.2.0/crtn.o
+        GNU ld (GNU Binutils) 2.43
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/stdlib/exit.c:65:(.text.exit+0x28): undefined reference to `_exit'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/closer.c:47:(.text._close_r+0x18): undefined reference to `_close'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x24): undefined reference to `_lseek'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/readr.c:49:(.text._read_r+0x24): undefined reference to `_read'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/writer.c:49:(.text._write_r+0x24): undefined reference to `_write'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_b1213.dir/build.make:99: cmTC_b1213] Error 1
+        make[1]: Leaving directory '/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-Dfgqyo'
+        make: *** [Makefile:127: cmTC_b1213/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:29 (project)"
+    checks:
+      - "Check for working C compiler: /bin/arm-none-eabi-gcc"
+    directories:
+      source: "/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-HhxZ0a"
+      binary: "/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-HhxZ0a"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-HhxZ0a'
+        
+        Run Build Command(s): /home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_9c3af/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_9c3af.dir/build.make CMakeFiles/cmTC_9c3af.dir/build
+        make[1]: Entering directory '/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-HhxZ0a'
+        Building C object CMakeFiles/cmTC_9c3af.dir/testCCompiler.c.obj
+        /bin/arm-none-eabi-gcc   -std=gnu11 -fdiagnostics-color=always -o CMakeFiles/cmTC_9c3af.dir/testCCompiler.c.obj -c /home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-HhxZ0a/testCCompiler.c
+        Linking C executable cmTC_9c3af
+        /home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c3af.dir/link.txt --verbose=1
+        /bin/arm-none-eabi-gcc CMakeFiles/cmTC_9c3af.dir/testCCompiler.c.obj -o cmTC_9c3af
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-exit.o): in function `exit':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/stdlib/exit.c:65:(.text.exit+0x28): undefined reference to `_exit'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-closer.o): in function `_close_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/closer.c:47:(.text._close_r+0x18): undefined reference to `_close'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-lseekr.o): in function `_lseek_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/lseekr.c:49:(.text._lseek_r+0x24): undefined reference to `_lseek'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-readr.o): in function `_read_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/readr.c:49:(.text._read_r+0x24): undefined reference to `_read'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-writer.o): in function `_write_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/writer.c:49:(.text._write_r+0x24): undefined reference to `_write'
+        /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/bin/ld: /usr/lib/gcc/arm-none-eabi/14.2.0/../../../../arm-none-eabi/lib/libc.a(libc_a-sbrkr.o): in function `_sbrk_r':
+        /build/arm-none-eabi-newlib/src/build-newlib/arm-none-eabi/newlib/../../../newlib-4.5.0.20241231/newlib/libc/reent/sbrkr.c:51:(.text._sbrk_r+0x18): undefined reference to `_sbrk'
+        collect2: error: ld returned 1 exit status
+        make[1]: *** [CMakeFiles/cmTC_9c3af.dir/build.make:99: cmTC_9c3af] Error 1
+        make[1]: Leaving directory '/home/nyan/projects/pet/deflect/cmake-build-debug-device/CMakeFiles/CMakeScratch/TryCompile-HhxZ0a'
+        make: *** [Makefile:127: cmTC_9c3af/fast] Error 2
+        
+      exitCode: 2
+...
