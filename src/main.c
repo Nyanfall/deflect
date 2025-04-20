@@ -9,7 +9,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "main.h"
-#include "src/game.h"
+#include "game.h"
 
 PlaydateAPI* pd = NULL;
 
@@ -119,11 +119,11 @@ void setupScoreboard(void)
 
     pd->sprite->setDrawFunction(msbSprite, drawScoreboardSprite);
 
-    PDRect msbBounds = PDRectMake(0, 0, 400, 480);
+    PDRect msbBounds = PDRectMake(0, 0, 400, 250);
     pd->sprite->setBounds(msbSprite, msbBounds);
     pd->sprite->setZIndex(msbSprite, 1);
     pd->sprite->addSprite(msbSprite);
-
+    pd->sprite->updateAndDrawSprites();
 }
 
 void drawCrankUndock(LCDSprite* sprite, PDRect bounds, PDRect drawrect)
@@ -147,6 +147,7 @@ void setupCrankAlert(void)
 
     PDRect mcaBounds = PDRectMake(240, 210, 160, 30);
     pd->sprite->setBounds(mcaSprite, mcaBounds);
+    pd->sprite->updateAndDrawSprites();
 }
 
 void runGame(void)
@@ -210,17 +211,24 @@ void setupMainMenu(void)
     pd->sprite->setBounds(mbgSprite, mbgBounds);
     pd->sprite->setZIndex(mbgSprite, 0);
     pd->sprite->addSprite(mbgSprite);
+    pd->sprite->updateAndDrawSprites();
 
 }
 
 int mainMenuUpdate(void* userdata)
 {
-    pd->sprite->updateAndDrawSprites();
 
     PDButtons pushed;
-    pd->system->getButtonState(NULL, &pushed, NULL);
+    PDButtons current;
+    pd->system->getButtonState(&current, &pushed, NULL);
 
     uint8_t crankDocked = pd->system->isCrankDocked();
+    float crank = pd->system->getCrankChange();
+
+    if (current & kButtonDown || crank < 0.0f || current & kButtonUp || crank > 0.0f || pushed & kButtonA || pushed & kButtonB)
+    {
+        pd->sprite->updateAndDrawSprites();
+    }
 
     if (isCrankTooltipActivated == 1 && crankDocked == 0 )
     {

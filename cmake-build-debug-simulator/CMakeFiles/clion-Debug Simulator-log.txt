@@ -1,5 +1,13 @@
 /home/nyan/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_BUILD_TYPE=Debug -G "Unix Makefiles" -S /home/nyan/projects/pet/deflect -B /home/nyan/projects/pet/deflect/cmake-build-debug-simulator
+-- The C compiler identification is GNU 14.2.1
+-- The ASM compiler identification is GNU
+-- Found assembler: /usr/bin/cc
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
 -- SDK Path: /home/nyan/PlaydateSDK
--- Configuring done (0.1s)
--- Generating done (0.1s)
+-- Configuring done (1.4s)
+-- Generating done (0.0s)
 -- Build files have been written to: /home/nyan/projects/pet/deflect/cmake-build-debug-simulator

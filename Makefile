@@ -1,7 +1,7 @@
 HEAP_SIZE      = 8388208
 STACK_SIZE     = 61800
 
-PRODUCT = whirlwind.pdx
+PRODUCT = deflect.pdx
 
 # Locate the SDK
 SDK = ${PLAYDATE_SDK_PATH}
@@ -21,7 +21,7 @@ endif
 VPATH += src
 
 # List C source files here
-SRC = src/main.c
+SRC = main.c
 
 # List all user directories here
 UINCDIR = 

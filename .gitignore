@@ -52,5 +52,5 @@ Mkfile.old
 dkms.conf
 
 #cmake builds
-cmake-build-device
-cmake-build-simulator
+cmake-build-debug-device
+cmake-build-debug-simulator

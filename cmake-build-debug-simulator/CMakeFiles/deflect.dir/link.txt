@@ -1,1 +1,1 @@
-/usr/bin/cc -fPIC -g -shared -Wl,-soname,libdeflect.so -o libdeflect.so CMakeFiles/deflect.dir/main.c.o
+/usr/bin/cc -fPIC -g -Wl,--dependency-file=CMakeFiles/deflect.dir/link.d -shared -Wl,-soname,libdeflect.so -o libdeflect.so CMakeFiles/deflect.dir/src/main.c.o CMakeFiles/deflect.dir/src/game.c.o

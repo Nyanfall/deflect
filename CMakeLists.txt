@@ -29,13 +29,13 @@ set(PLAYDATE_GAME_DEVICE deflect_DEVICE)
 project(${PLAYDATE_GAME_NAME} C ASM)
 
 set(PROJECT_SRC
-		main.c
-		main.h
-#		src/game.c
-#		src/game.h
+		src/main.c
+		src/game.c
+		src/game.h
 )
 
 if (TOOLCHAIN STREQUAL armgcc)
+	set(CMAKE_TRY_COMPILE_TARGET_TYPE STATIC_LIBRARY)
 	add_executable(${PLAYDATE_GAME_DEVICE} ${PROJECT_SRC})
 	add_link_options(-specs=nano.specs -specs=nosys.specs)
 else()

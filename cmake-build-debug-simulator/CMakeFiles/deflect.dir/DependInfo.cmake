@@ -8,7 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nyan/projects/pet/deflect/main.c" "CMakeFiles/deflect.dir/main.c.o" "gcc" "CMakeFiles/deflect.dir/main.c.o.d"
+  "/home/nyan/projects/pet/deflect/src/game.c" "CMakeFiles/deflect.dir/src/game.c.o" "gcc" "CMakeFiles/deflect.dir/src/game.c.o.d"
+  "/home/nyan/projects/pet/deflect/src/main.c" "CMakeFiles/deflect.dir/src/main.c.o" "gcc" "CMakeFiles/deflect.dir/src/main.c.o.d"
+  "" "libdeflect.so" "gcc" "CMakeFiles/deflect.dir/link.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
